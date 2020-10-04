@@ -1,0 +1,45 @@
+
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin-top: 30%;
+	margin-left: 30%;
+	position: absolute;
+
+
+	transition-property: transform, background-color;
+	transition-duration: 2s;
+
+	transform: scale(1, 1);
+
+	animation: hyejins;
+	animation-duration: 0.2s;
+	animation-play-state: paused;
+
+
+
+
+
+}
+
+.box:hover {
+	transform: scale(5, 5) rotate(180deg);
+
+	animation-play-state: running;
+
+	background-color: purple;
+
+
+}
+
+@keyframes hyejins {
+	0% {
+		opacity: 0.5
+	}
+
+	100% {
+		opacity: 1
+	}
+}
